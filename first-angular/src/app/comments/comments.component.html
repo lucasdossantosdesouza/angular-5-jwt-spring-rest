@@ -1,0 +1,11 @@
+<p>
+  comments works!
+</p>
+
+<ul *ngFor="let comment of comments">
+  <!--property biding :atribuição de valores em propriedades-->
+  <li  >
+{{comment.id}} -- {{comment.title | uppercase}} -- {{comment.body}}
+  </li>
+  
+</ul>

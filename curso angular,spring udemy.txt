@@ -1,0 +1,55 @@
+Instação do node.js
+Intstalação angular/cli:comanto no prompt do node npm install -g @angular/cli
+Instação do typescript :comanto no prompt do node npm install -g typescript
+Instalar Visual studio code.
+Instalar plugins no visual:auto import, angular v5 snipts,vsicons,portugues language,tslink
+
+
+
+TypeScript é um super typescript que compila para js puro,
+trouxe a typagem
+para classes, metodos
+usando orientação a objeto
+typescript criado pela microsoft ander relsberg
+
+Inferência de tipo
+
+configurar para projeto type script utilizar tsconfig.json
+compilação por comando paleta de configuração, configurar task, escolha tsconfig.
+depois pra complilar digite ctrl+shifit+b
+
+o .map serve para dizer em qual arquivo e linha esta o erro, ja que ao compilar os projetos os js ficam num arquivo só e em apenas uma linha.
+
+esconder .js e .map arquivo-preferencias-configuração
+
+configuração de usuário 
+{
+    "files.exclude": {
+        "**/.git": true,
+        "**/.svn": true,
+        "**/.hg": true,
+        "**/CVS": true,
+        "**/.DS_Store": true,
+        "**/*.js":{
+            "when": "$(basename).ts"
+        },
+        "**/*.js.map":true
+    },
+    "workbench.iconTheme": "vscode-icons",
+    "editor.fontSize": 14
+    
+}
+
+diretório src 
+
+aplicacao
+style guide seguir padrao app.component padrões
+bootstrap inicializar no app-module
+assets arquivos staticos exemplo imagens
+enviroments: mudar ambientes desenvolvimento, homolog e produção
+app-root seletor do web component
+main.ts compila a aplicacao
+polifis emular funções do navegador
+style.css estilos globais
+tsconfig configura compilador do typescript
+

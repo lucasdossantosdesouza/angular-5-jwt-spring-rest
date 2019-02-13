@@ -1,0 +1,17 @@
+<input type="text" [(ngModel)]="task">
+<button (click)="addTask()">Add to List</button>
+<ul>
+  <!--property biding :atribuição de valores em propriedades-->
+  <li *ngFor="let item of tasks" [innerHtml]="item">
+
+  </li>
+</ul>
+<br/>
+<!--property biding-->
+<div [hidden]="isAdmin">
+common user
+</div>
+<div [hidden]="!isAdmin">
+  administrador  
+</div>
+

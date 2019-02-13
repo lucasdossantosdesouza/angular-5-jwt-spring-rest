@@ -1,0 +1,40 @@
+
+  <h1>
+   {{ title }}!
+  </h1>
+<br>
+<!--componente-->
+<app-task-list></app-task-list>
+<br/>
+<!--pipes: apresentação e formatação de dados-->
+{{ user | json }}
+<br/>
+{{ upperText | uppercase }}
+<br/>
+{{ lowerText | lowercase }} 
+<br/>
+{{ data | date :'dd/MM/yyyy' }}
+<br/>
+{{ percent | percent:digitInfo }}
+<br/>
+{{ currency | currency }}
+<br/>
+<!--diretivas-->
+<div *ngIf="isAdmin">
+  admin
+
+</div>
+
+<div [ngSwitch]="profile">
+<p *ngSwitchCase="2">
+Dois
+</p>
+<p *ngSwitchCase="1">
+Um
+</p>
+<p *ngSwitchDefault>
+Zero
+</p>
+</div>
+<br/>
+<app-comments></app-comments>
