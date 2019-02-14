@@ -15,10 +15,11 @@ export class AppComponent {
   currency: number = 10.56789;
   data: Date = new Date();
   user: User = {
-    name: 'lucas',
+    name: 'lucas', 
     idade : 25
   };
   profile: number = 2;
-
   isAdmin: boolean = true;
+  name: string = '';
+  email: string = '';
 }

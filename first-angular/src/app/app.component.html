@@ -37,4 +37,23 @@ Zero
 </p>
 </div>
 <br/>
+<!--validação de formulário-->
+<form action="" #form="ngForm">
+  <div>
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" [(ngModel)]="name" #nameVerifica="ngModel" required>  
+    <span *ngIf="nameVerifica.invalid">name é obrigatório</span>
+  </div>
+  <br/>
+  <div>
+    <label for="email">Email:</label>
+    <input type="text" id="email" name="email" [(ngModel)]="email" #emailVerifica="ngModel" email>    
+    <span *ngIf="emailVerifica.invalid">email válido</span>
+  </div>
+  <br/>
+  <button type="submit" [disabled]="!form.valid">Enviar</button>
+</form>
+
+
 <app-comments></app-comments>
+
